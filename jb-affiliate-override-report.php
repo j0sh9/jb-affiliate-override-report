@@ -42,7 +42,7 @@ function jb_affilaite_report_html() {
 	} else {
 		$start_date = '';
 		$end_date = '';
-		$referral_status = 'paid';
+		$referral_status = '';
 	}
 ?>
 
