@@ -61,7 +61,7 @@ function jb_affilaite_report_html() {
 /** Get Affiliates **/
 	$affiliates_db = new Affiliate_WP_DB_Affiliates();
 	$aff_args = array(
-		'number'       => 20,
+		'number'       => -1,
 		'offset'       => 0,
 		'exclude'      => array(),
 		'user_id'      => 0,
@@ -78,7 +78,7 @@ function jb_affilaite_report_html() {
 		/** Get Referrals **/
 
 		$ref_args = array(
-			//'number'       => 20,
+			'number'       => -1,
 			//'offset'       => 0,
 			//'referral_id'  => 0,
 			//'payout_id'    => 0,
