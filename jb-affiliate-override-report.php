@@ -144,8 +144,8 @@ function jb_affilaite_report_html() {
 			}
 		}
 		?>
-		<tr><th colspan="2">Totals:</th><td></td><th><?php echo $order_total; ?></th><th><?php echo $ref_total; ?></th><td></td><td></td></tr>
-		<tr><th colspan="2">1% Override:</th><td></td><th><?php echo number_format(($order_total*0.01),2); ?></th><th></th><td></td><td></td></tr>
+		<tr><td></td><th colspan="2">Totals:</th><th><?php echo $order_total; ?></th><th><?php echo $ref_total; ?></th><td></td><td></td></tr>
+		<tr><td></td><th colspan="2">1% Override:</th><th><?php echo number_format(($order_total*0.01),2); ?></th><th></th><td></td><td></td></tr>
 		</table>
 		<?php
 	}
