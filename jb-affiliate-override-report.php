@@ -63,7 +63,7 @@ function jb_affilaite_report_html() {
 	$aff_args = array(
 		'number'       => -1,
 		'offset'       => 0,
-		'exclude'      => array(),
+		'exclude'      => array('1','252244'),
 		'user_id'      => 0,
 		'affiliate_id' => 0,
 		'status'       => '',
