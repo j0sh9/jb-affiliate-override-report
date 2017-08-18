@@ -55,7 +55,7 @@ function jb_affilaite_report_html() {
 		</form>
 
 <?php
-
+if ( !isset( $_POST['start_date']) || !isset( $_POST['end_date']) ) die('Please enter a date range');
 	
 /** Get Affiliates **/
 	$affiliates_db = new Affiliate_WP_DB_Affiliates();
