@@ -50,7 +50,7 @@ function jb_affilaite_report_html() {
 			<br>
 			<label>End Date: <input type="date" name="end_date" id="end_date" value="<?=$_POST['end_date'];?>"   /></label>
 			<br>
-			<label>Referral Status: <input type="text" name="referral_status" id="referral_status" value="<?=$referral_status;?>"   /></label> pending | unpaid | paid | rejected
+			<label>Referral Status: <input type="text" name="referral_status" id="referral_status" value="<?=$referral_status;?>"   /></label> pending | unpaid | paid | rejected | Leave empty for all statuses
 			<p><input type="submit"/></p>
 		</form>
 
