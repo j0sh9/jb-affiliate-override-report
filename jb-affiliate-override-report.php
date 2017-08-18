@@ -6,14 +6,13 @@ Version: 1.0
 */
 
 function jb_affiliate_override_report() {
-	$jb_page_title = 'Affiliate Reports with Overrides';
-	$jb_menu_title = 'Affiliate Reports';
+	$jb_parent_slug = 'affiliate-wp';
+	$jb_page_title = 'Affiliate Detailed Reports';
+	$jb_menu_title = 'Detailed Earnings';
 	$jb_capability = 'manage_affiliates';
-	$jb_menu_slug = 'jb-affiliate-reports';
-	$jb_callback = 'jb_affilaite_report_html';
-	$jb_icon_url = 'dashicons-chart-pie';
-	$jb_menu_position = 120;
-	add_menu_page(  $jb_page_title,  $jb_menu_title,  $jb_capability,  $jb_menu_slug,  $jb_callback,  $jb_icon_url,  $jb_menu_position );
+	$jb_menu_slug = 'jbm-affiliate-custom-report';
+	$jb_callback = 'jbm_affiliate_custom_report_html';
+	add_submenu_page(  $jb_parent_slug, $jb_page_title,  $jb_menu_title,  $jb_capability,  $jb_menu_slug,  $jb_callback );
 }
 
 function jb_affilaite_report_html() {
