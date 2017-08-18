@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Affiliate Override Report
+Plugin Name: _Affiliate Detailed Reports
 Description: Admin Page for affilaite reports and overrides
 Version: 1.0
 */
@@ -11,7 +11,7 @@ function jb_affiliate_override_report() {
 	$jb_menu_title = 'Detailed Earnings';
 	$jb_capability = 'manage_affiliates';
 	$jb_menu_slug = 'jbm-affiliate-custom-report';
-	$jb_callback = 'jbm_affiliate_custom_report_html';
+	$jb_callback = 'jb_affilaite_report_html';
 	add_submenu_page(  $jb_parent_slug, $jb_page_title,  $jb_menu_title,  $jb_capability,  $jb_menu_slug,  $jb_callback );
 }
 
